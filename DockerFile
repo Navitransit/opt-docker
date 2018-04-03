@@ -18,7 +18,6 @@ RUN \
   mkdir -p /var/otp/scripting && \
   mkdir -p /var/otp/graphs/dk && \
   wget -O /var/otp/graphs/dk/ddot.zip https://navitia.opendatasoft.com/explore/dataset/dk/files/ec2e817b5b7462f54dc0f93793638ea5/download/ && \
-  wget -P /var/otp/graphs/dk https://download.geofabrik.de/europe/denmark-latest.osm.pbf && \
   java -Xmx2G -jar /var/otp/otp.jar --build /var/otp/graphs/dk
 
 EXPOSE 8080
