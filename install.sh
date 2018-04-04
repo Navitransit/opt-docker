@@ -10,4 +10,4 @@ wget -O /otp/graphs/dk/ddot.zip https://navitia.opendatasoft.com/explore/dataset
 
 java -Xmx2G -jar /otp/otp.jar --build /otp/graphs/dk --graphs /otp/graphs/dk
 
-nohup java -Xmx2G -jar /otp/otp.jar --graphs /otp/graphs/dk --router --server > otp.log
+nohup java -Xmx2G -jar /var/otp/otp.jar --server --router dk --analyst --port 5454 2>> /dev/null >> /dev/null &
